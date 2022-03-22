@@ -23,10 +23,10 @@ export default e => {
   const hurtAnimation = animations.find(a => a.isHurt);
   const hurtAnimationDuration = hurtAnimation.duration;
 
-  const npcName = app.getComponent('name') ?? 'Anon';
-  const npcVoiceName = app.getComponent('voice') ?? 'Sweetie Belle';
-  const npcBio = app.getComponent('bio') ?? 'A generic avatar.';
-  const npcAvatarUrl = app.getComponent('avatarUrl') ?? `/avatars/4670.vrm`;
+  const npcName = app.getComponent('name') ?? 'Citrine';
+  const npcVoiceName = app.getComponent('voice') ?? 'Rapunzel';
+  const npcBio = app.getComponent('bio') ?? "Citrine is a poor little orphan girl. She's lived by herself on the street her whole life. She doesn't remember anything of her parents, but she carries around a locket with an inscription that reads, 'We love you forever'. Her only goal in life is to have a family.";
+  const npcAvatarUrl = app.getComponent('avatarUrl') ?? `citrine.vrm`;
   let npcWear = app.getComponent('wear') ?? [];
   if (!Array.isArray(npcWear)) {
     npcWear = [npcWear];
