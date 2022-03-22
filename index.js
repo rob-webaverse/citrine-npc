@@ -26,7 +26,7 @@ export default e => {
   const npcName = app.getComponent('name') ?? 'Citrine';
   const npcVoiceName = app.getComponent('voice') ?? 'Rapunzel';
   const npcBio = app.getComponent('bio') ?? "Citrine is a poor little orphan girl. She's lived by herself on the street her whole life. She doesn't remember anything of her parents, but she carries around a locket with an inscription that reads, 'We love you forever'. Her only goal in life is to have a family.";
-  const npcAvatarUrl = app.getComponent('avatarUrl') ?? `citrine.vrm`;
+  const npcAvatarUrl = app.getComponent('avatarUrl') ?? `./citrine.vrm`;
   let npcWear = app.getComponent('wear') ?? [];
   if (!Array.isArray(npcWear)) {
     npcWear = [npcWear];
